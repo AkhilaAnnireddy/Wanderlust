@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-transparent navbar-transparent fixed-top">
+        <a class="navbar-brand" href="Home.html" >Wanderlust</a>
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item">
+                <a class="nav-link" href="Home.html" >Home</a>
+            </li>
+            <li class="active">
+              <a  href="places.html">Travel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bookings.html">Bookings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+          </ul>
+    </nav>
+    <div class="myslides_back">
+    <div class="w3-content w3-display-container">
+      <h2 style="padding: 10px;">Chennai</h2>
+      <img class="mySlides" src="Images/marina.jpg" >
+      <img class="mySlides" src="Images/breezy.jpg">
+      <img class="mySlides" src="Images/arignar.png">
+      <img class="mySlides" src="Images/mgr.jpg">
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+  </div>
+  <div class="container">
+    <h3 class="places">Places to visit</h3>
+    <p>
+
+      Although planning a trip alone isn’t very interesting, it can certainly be more absorbing. It takes a lot of efforts to identify the 
+      <strong>right tourist destination</strong> that would give you all that you expect on a holiday.
+       Once you have the destination decided, you need to further your research to find out the important tourist places in the destination. Then comes the travel plan and arrangements for accommodation. If your plan is to visit Delhi during your holidays, 
+      here are some suggestions that would help you with your plan. Here are places that <strong>you must visit in Chennai</strong>
+    </p>
+    <h3 class="places">Marina Beach</h3>
+      <p>Marina Beach is a natural urban beach in Chennai, Tamil Nadu, India, along the Bay of Bengal. 
+    </p>
+    <p>The beach runs from near Fort St. George in the north to Foreshore Estate in the south, a distance of 6.0 km, making it the longest natural urban beach in the country. The Marina is primarily sandy, unlike the short, rocky formations that make up the Juhu Beach in Mumbai. The average width of the beach is 300 m and the width at the widest stretch is 437 m. Bathing and swimming at the Marina Beach are legally prohibited because of the dangers, as the undercurrent is very turbulent. It is one of the most crowded beaches in the country and attracts about 30,000 visitors a day during weekdays and 50,000 visitors a day during the weekends and on holidays.
+    </p>
+      
+      <h3 class="places">MGR Filmcity</h3>
+      <p>
+        Having been established in the year 1994, a considerably new structure, the MGR Film city is managed by the Government of Tamil Nadu in loving memory of MG Ramachandran who was not only a crowd-pleasing tamil actor but also a longtime CM of Tamil Nadu.
+      </p>
+      <p>Covering a massive 70 acres at Taramani in Chennai, the MGR Film City is a popular tourist hotspot and the place-to-be for several South Indian films directors.
+      </p>
+      <h3 class="places">Breezy beach</h3>
+      <p>Breezy Beach lays in the remote and serene neighbourhood of Valmiki Nagar in Chennai. Being smaller and less polluted, its a perfect getaway for anyone looking for a peaceful evening.</p>
+      <p>This beach is not as popular and known as the Elliots beach, and is hence more quiet and peaceful. Evenings are very pleasant and breezy here, and in the recent years, lots of tourists have been attracted towards this beach for its beauty. </p>
+      <h3 class="places">Arignar Anna Zoological Park</h3>
+      <p><span style="font-weight: 400;">Perhaps one of the most popular picnic spots in Vandalur, Kanchipuram District, the Arignar Zoological Park is an amazing place to discover the flora and fauna of the region.A favourite weekend spot with both children and adults alike, the Arignar Zoo is situated at a distance of 32 kilometres from Chennai city. 
+        It is the largest zoo of its kind in South East Asia and is sprawled over an area of 1260 acres.  </span></p>
+      </div>
+      <p style="text-align: center;">Many more...</p>
+      <hr style="color: black;">
+      <ul class="footer-links">
+        <li><a href="home">Home |</a></li>
+        <li><a href="about-us">About Us |</a></li>
+        <li><a href="about-hyderabad">About Hyderabad |</a></li>
+        <li><a href="gallery">Gallery |</a></li>
+        <li><a href="cat-videogallery.php">Video Gallery |</a></li>       
+        <li><a href="services">Services |</a></li>
+        <li><a href="achievements">Achievements |</a></li> 
+        <li><a href="contact-us">Contact Us</a></li>
+        </ul>
+        <div style="padding: 15px;"></div>
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+    
+        
+  </body>
+</html>

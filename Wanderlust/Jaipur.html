@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-transparent navbar-transparent fixed-top">
+        <a class="navbar-brand" href="Home.html" >Wanderlust</a>
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item">
+                <a class="nav-link" href="Home.html" >Home</a>
+            </li>
+            <li class="active">
+              <a  href="places.html">Travel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bookings.html">Bookings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+          </ul>
+    </nav>
+    <div class="myslides_back">
+    <div class="w3-content w3-display-container">
+      <h2 style="padding: 10px;">Jaipur</h2>
+      <img class="mySlides" src="Images/amer.jpg" >
+      <img class="mySlides" src="Images/palace.jpg">
+      <img class="mySlides" src="Images/hawa.png">
+      <img class="mySlides" src="Images/jantar.jpg">
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+  </div>
+  <div class="container">
+    <h3 class="places">Places to visit</h3>
+    <p>
+
+      Although planning a trip alone isn’t very interesting, it can certainly be more absorbing. It takes a lot of efforts to identify the 
+      <strong>right tourist destination</strong> that would give you all that you expect on a holiday.
+       Once you have the destination decided, you need to further your research to find out the important tourist places in the destination. Then comes the travel plan and arrangements for accommodation. If your plan is to visit Delhi during your holidays, 
+      here are some suggestions that would help you with your plan. Here are places that <strong>you must visit in Jaipur</strong>
+    </p>
+    <h3 class="places">Amer Fort</h3>
+      <p>In the Pink City of Jaipur, cradled on the top of the Aravali Hill lies the Amer Fort, one of the most magnificent palaces in India. Also commonly known as the Amber Fort, this majestic building with its maze-like passages and serpentine staircases is an architectural masterpiece and with significant importance in Indian history. Only 11 kilometres away from the capital city of Jaipur, Amer Fort is clad in pink and yellow sandstone and is a part of an extensive complex.
+         Built by one of the most trusted generals of Akbar, Maharaja Man Singh I in the year 1592, Amer Fort served as the main residence of the Rajput Rulers.
+    </p>
+      <h3 class="places">City Palace</h3>
+      <p>
+        The magnificent City Palace in Jaipur is one of the most famous tourist attractions located in the old part of the city. 
+        Built by Maharaja Sawai Jai Singh during the years 1729 to 1732, the vast complex of the palace occupied one-seventh of the walled city. In fact, it was once the seat of the Maharaja of Jaipur. The palace is divided into a series of courtyards, buildings and gardens including the Chandra Mahal and the Mubarak Mahal. The museum showcases various unique handcrafted products and other things that belong to the royal heritage of the City Palace.
+
+
+      </p>
+      <h3 class="places">Hawa Mahal</h3>
+      <p>The massive edifice of Hawa Mahal stands at the intersection of the main road in Jaipur, Badi Chaupad and was built by Maharaja Sawai Pratap Singh in the year 1799. Hawa Mahal derives its name from its unique structure, which is a mesh of small windows that allowed cool wind to enter the palace and hence kept the palace comfortable during the hot summer months. The main reason behind the palace's construction was to allow the women of the royal house to observe the festivities on the streets whilst being unseen from the outside as was the custom of the land. 
+        It is located right on the edge of the City Palace Jaipur and extends right to the 'zenana'. </p>
+      <h3 class="places">Jantar Mantar</h3>
+      <p><span style="font-weight: 400;">Located near the City Palace in the regal city of Jaipur, Jantar Mantar is the largest stone astronomical observatory in the world. Owing to its rich cultural, heritage and scientific value, Jantar Mantar in Jaipur has also been featured on UNESCO's list of World Heritage Sites. This ancient study boasts of nineteen instruments built out of stone and brass and was built by Raja Sawai Jai Singh in 1727-33. The intelligent construction and placement of these instruments allowed the observers to note the position of heavenly bodies with their naked eye alone. 
+        Time has failed to lay dust upon this engineering marvel and it still works as well as it used to in the olden times.  </span></p>
+      </div>
+      <p style="text-align: center;">Many more...</p>
+      <hr style="color: black;">
+      <ul class="footer-links">
+        <li><a href="home">Home |</a></li>
+        <li><a href="about-us">About Us |</a></li>
+        <li><a href="about-hyderabad">About Hyderabad |</a></li>
+        <li><a href="gallery">Gallery |</a></li>
+        <li><a href="cat-videogallery.php">Video Gallery |</a></li>       
+        <li><a href="services">Services |</a></li>
+        <li><a href="achievements">Achievements |</a></li> 
+        <li><a href="contact-us">Contact Us</a></li>
+        </ul>
+        <div style="padding: 15px;"></div>
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+    
+        
+  </body>
+</html>

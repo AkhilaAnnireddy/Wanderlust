@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-transparent navbar-transparent fixed-top">
+        <a class="navbar-brand" href="Home.html" >Wanderlust</a>
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item">
+                <a class="nav-link" href="Home.html" >Home</a>
+            </li>
+            <li class="active">
+              <a  href="places.html">Travel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bookings.html">Bookings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+          </ul>
+    </nav>
+    <div class="myslides_back">
+    <div class="w3-content w3-display-container">
+      <h2 style="padding: 10px;">Ooty</h2>
+      <img class="mySlides" src="Images/nilgiri.jpg" >
+      <img class="mySlides" src="Images/lake.jpg">
+      <img class="mySlides" src="Images/emerald.jpg">
+      <img class="mySlides" src="Images/rose.jpg">
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+  </div>
+  <div class="container">
+    <h3 class="places">Places to visit</h3>
+    <p>
+
+      Although planning a trip alone isn’t very interesting, it can certainly be more absorbing. It takes a lot of efforts to identify the 
+      <strong>right tourist destination</strong> that would give you all that you expect on a holiday.
+       Once you have the destination decided, you need to further your research to find out the important tourist places in the destination. Then comes the travel plan and arrangements for accommodation. If your plan is to visit Delhi during your holidays, 
+      here are some suggestions that would help you with your plan. Here are places that <strong>you must visit in Ooty</strong>
+    </p>
+    <h3 class="places">Nilgiri Mountain railway</h3>
+      <p>Nilgiri Mountain Railway, also known as Toy Train in Ooty, is one of the key attractions of the popular hill station Ooty. Such is the train's popularity and history that it was declared as a World Heritage Site by UNESCO in 2005. Started in the year 1899, it has continued to charm its visitors over the past many years winding its way through the best of nature. The Toy Train covers a distance of total 46 km in a span of 5 hours and takes one through a truly spectacular journey filled with picturesque views en route. Another fascinating feature of 
+        the train is that its youngest X class locomotive is over 50 years old and the oldest is 80 years old.
+    </p>
+      <h3 class="places">Ooty lake</h3>
+      <p>
+        Ooty Lake is one of the most refreshing and beautiful places to visit in Ooty. It lies at a distance of approximately 2 km from Ooty city in the green hills of the Nilgiris district. The stunning lake is spread over an area of 65 acres, and its foundation was laid down by John Sullivan who was the collector of Coimbatore in 1824. Ooty Lake is surrounded by Eucalyptus trees and greenery all around and is a great place to experience the beauty of this hill station. One can also spot numerous streams coming out through the hills. This is a perfect place to capture people who are genuinely interested in photography.
+         The lake is filled with beautiful water birds with the exotic Nilgiri mountain ranges in the background.
+
+
+      </p>
+      <h3 class="places">Emerald lake</h3>
+      <p>Emerald Lake is situated in Emerald Village, around 20-22 kilometres from the main city of Ooty and is a part of the Silent Valley National Park in the Nilgiris District. Serene and away from the maddening crowd, the lake and its surroundings are much cleaner and offer a perfect place to enjoy a leisurely time in the vicinity of nature and quietude. It is one of the unexplored and virgin places of the South Indian hill station, not yet encroached by the masses of tourists that visit the place every year. Emerald Lake is the ideal spot in Ooty for nature lovers. Tourists usually flock there for the picturesque scenic beauty of the lake, and the green Nilgiri slopes and tea plantations surrounding it. 
+        It is a paradise for nature photography enthusiasts as the delightful landscape offers a perfect subject and composition.  </p>
+      <h3 class="places">Rose Garden</h3>
+      <p><span style="font-weight: 400;">Ooty Rose Garden is a mesmerizing garden in the heart of the town of Ooty, in Tamil Nadu. It is also known as the Jayalalithaa Rose Garden, the Nootrandu Roja Poonga and the Centenary Rose Park. Nature lovers are drawn to the Rose Garden like bees to honey. The view of the lush green garden with areas dedicated to captivatingly fragrant roses is a sight to remember. The flowers add more than just colour and attract visitors from all age groups, especially those who are interested in the study of Botany. You are bound to feel like you have entered a 
+        different world as you stroll leisurely across the beautifully landscaped garden. </span></p>
+      </div>
+      <p style="text-align: center;">Many more...</p>
+      <hr style="color: black;">
+      <ul class="footer-links">
+        <li><a href="home">Home |</a></li>
+        <li><a href="about-us">About Us |</a></li>
+        <li><a href="about-hyderabad">About Hyderabad |</a></li>
+        <li><a href="gallery">Gallery |</a></li>
+        <li><a href="cat-videogallery.php">Video Gallery |</a></li>       
+        <li><a href="services">Services |</a></li>
+        <li><a href="achievements">Achievements |</a></li> 
+        <li><a href="contact-us">Contact Us</a></li>
+        </ul>
+        <div style="padding: 15px;"></div>
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+    
+        
+  </body>
+</html>
